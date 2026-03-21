@@ -1,0 +1,15 @@
+{
+  "dataset": "hungary_10y_yield",
+  "before_rows": 325,
+  "after_rows": 325,
+  "duplicate_date_count": 0,
+  "missing_value_count_after": 0,
+  "date_parse_issues": [
+    {
+      "column": "date",
+      "raw_non_null": 325,
+      "parsed_non_null": 325,
+      "parse_failures": 0
+    }
+  ]
+}

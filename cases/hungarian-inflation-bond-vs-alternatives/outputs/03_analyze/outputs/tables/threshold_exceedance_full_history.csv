@@ -1,0 +1,12 @@
+ticker,mode,threshold,windows_above_threshold,total_valid_windows,exceedance_rate
+SPY,full-history,0.05,145,183,0.7923
+XLB,full-history,0.05,113,183,0.6175
+XLC,full-history,0.05,61,82,0.7439
+XLE,full-history,0.05,99,183,0.541
+XLF,full-history,0.05,114,183,0.623
+XLI,full-history,0.05,133,183,0.7268
+XLK,full-history,0.05,157,183,0.8579
+XLRE,full-history,0.05,54,114,0.4737
+XLU,full-history,0.05,135,183,0.7377
+XLV,full-history,0.05,137,183,0.7486
+XLY,full-history,0.05,158,183,0.8634

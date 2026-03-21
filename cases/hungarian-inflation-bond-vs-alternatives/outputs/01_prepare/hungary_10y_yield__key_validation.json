@@ -1,0 +1,12 @@
+{
+  "key_columns": [
+    "date"
+  ],
+  "missing_key_columns": [],
+  "key_duplicate_count": 0,
+  "null_in_key_count": 0,
+  "unique_key_count": 325,
+  "valid": true,
+  "dataset_name": "hungary_10y_yield",
+  "file_name": "hungary_10y_yield.csv"
+}

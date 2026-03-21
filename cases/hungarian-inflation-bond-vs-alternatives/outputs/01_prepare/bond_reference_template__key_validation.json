@@ -1,0 +1,12 @@
+{
+  "key_columns": [
+    "bond_id"
+  ],
+  "missing_key_columns": [],
+  "key_duplicate_count": 0,
+  "null_in_key_count": 0,
+  "unique_key_count": 1,
+  "valid": true,
+  "dataset_name": "bond_reference_template",
+  "file_name": "bond_reference_template.csv"
+}

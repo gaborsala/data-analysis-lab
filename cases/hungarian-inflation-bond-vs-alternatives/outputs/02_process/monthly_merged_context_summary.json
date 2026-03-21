@@ -1,0 +1,7 @@
+{
+  "dataset": "monthly_merged_context",
+  "row_count": 1975,
+  "missing_cpi_yoy_count": 121,
+  "missing_yield_10y_count": 11,
+  "join_rule": "ETF month-end series left joined to monthly CPI and 10Y yield on year_month"
+}

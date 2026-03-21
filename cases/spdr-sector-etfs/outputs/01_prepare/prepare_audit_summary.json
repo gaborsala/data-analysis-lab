@@ -1,0 +1,481 @@
+{
+  "source_kind": "zip_archive",
+  "source_path": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\data\\raw\\SPDR_SECTOR_ETFS.zip",
+  "canonical_dataset": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\spdr-sector-etfs\\outputs\\02_prepare\\all_sectors.csv",
+  "row_count": 61448,
+  "column_count": 8,
+  "columns": [
+    "ticker",
+    "sector",
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "min_date": "1998-12-22 00:00:00",
+  "max_date": "2024-06-24 00:00:00",
+  "unique_tickers": 11,
+  "unique_sectors": 11,
+  "schema": [
+    {
+      "column": "ticker",
+      "observed_type": "str",
+      "expected_type": "str",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "XLC"
+    },
+    {
+      "column": "sector",
+      "observed_type": "str",
+      "expected_type": "str",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "Communication Services"
+    },
+    {
+      "column": "date",
+      "observed_type": "str",
+      "expected_type": "datetime64[ns]",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "2018-06-19"
+    },
+    {
+      "column": "open",
+      "observed_type": "float64",
+      "expected_type": "float",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "49.56893440336633"
+    },
+    {
+      "column": "high",
+      "observed_type": "float64",
+      "expected_type": "float",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "49.92798563808975"
+    },
+    {
+      "column": "low",
+      "observed_type": "float64",
+      "expected_type": "float",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "49.44925192667097"
+    },
+    {
+      "column": "close",
+      "observed_type": "float64",
+      "expected_type": "float",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "49.8282470703125"
+    },
+    {
+      "column": "volume",
+      "observed_type": "int64",
+      "expected_type": "integer",
+      "non_null": 61448,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "example": "16600"
+    }
+  ],
+  "integrity_checks": [
+    {
+      "name": "row_count",
+      "value": 61448,
+      "status": "info",
+      "notes": ""
+    },
+    {
+      "name": "column_count",
+      "value": 8,
+      "status": "info",
+      "notes": ""
+    },
+    {
+      "name": "duplicate_ticker_date_rows",
+      "value": 0,
+      "status": "pass",
+      "notes": "Composite key candidate: ticker + date"
+    },
+    {
+      "name": "date_parse_failures",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "weekend_dated_rows",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "negative_open",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "zero_open",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "negative_high",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "zero_high",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "negative_low",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "zero_low",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "negative_close",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "zero_close",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "negative_volume",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "zero_volume",
+      "value": 6,
+      "status": "info",
+      "notes": ""
+    },
+    {
+      "name": "high_lt_open",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "high_lt_close",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "low_gt_open",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "low_gt_close",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    },
+    {
+      "name": "high_lt_low",
+      "value": 0,
+      "status": "pass",
+      "notes": ""
+    }
+  ],
+  "file_inventory": [
+    {
+      "relative_path": "all_sectors.csv",
+      "column_count": 8,
+      "columns": [
+        "ticker",
+        "sector",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLB.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLC.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLE.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLF.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLI.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLK.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLP.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLRE.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLU.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLV.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    },
+    {
+      "relative_path": "individual_data/XLY.csv",
+      "column_count": 7,
+      "columns": [
+        "ticker",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ]
+    }
+  ],
+  "ticker_row_counts": {
+    "XLB": 6416,
+    "XLE": 6416,
+    "XLF": 6416,
+    "XLU": 6416,
+    "XLI": 6416,
+    "XLK": 6416,
+    "XLP": 6416,
+    "XLY": 6416,
+    "XLV": 6416,
+    "XLRE": 2191,
+    "XLC": 1513
+  },
+  "ticker_to_sector_nunique": {
+    "XLB": 1,
+    "XLC": 1,
+    "XLE": 1,
+    "XLF": 1,
+    "XLI": 1,
+    "XLK": 1,
+    "XLP": 1,
+    "XLRE": 1,
+    "XLU": 1,
+    "XLV": 1,
+    "XLY": 1
+  },
+  "missing_by_column": {
+    "ticker": 0,
+    "sector": 0,
+    "date": 0,
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "volume": 0
+  },
+  "zero_volume_rows": 6,
+  "ticker_date_coverage": [
+    {
+      "ticker": "XLB",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLC",
+      "min": "2018-06-19 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 1513
+    },
+    {
+      "ticker": "XLE",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLF",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLI",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLK",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLP",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLRE",
+      "min": "2015-10-08 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 2191
+    },
+    {
+      "ticker": "XLU",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLV",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    },
+    {
+      "ticker": "XLY",
+      "min": "1998-12-22 00:00:00",
+      "max": "2024-06-24 00:00:00",
+      "count": 6416
+    }
+  ]
+}

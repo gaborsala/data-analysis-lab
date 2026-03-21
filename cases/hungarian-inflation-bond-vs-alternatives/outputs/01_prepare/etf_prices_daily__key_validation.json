@@ -1,0 +1,13 @@
+{
+  "key_columns": [
+    "Date",
+    "ticker"
+  ],
+  "missing_key_columns": [],
+  "key_duplicate_count": 0,
+  "null_in_key_count": 0,
+  "unique_key_count": 44814,
+  "valid": true,
+  "dataset_name": "etf_prices_daily",
+  "file_name": "etf_prices_daily.csv"
+}

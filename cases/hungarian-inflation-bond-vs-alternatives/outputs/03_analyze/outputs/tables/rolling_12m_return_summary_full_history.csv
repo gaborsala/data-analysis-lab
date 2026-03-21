@@ -1,0 +1,12 @@
+ticker,mode,valid_windows,mean_rolling_12m_return,median_rolling_12m_return,min_rolling_12m_return,max_rolling_12m_return
+SPY,full-history,183,0.1481,0.1599,-0.1818,0.5623
+XLB,full-history,183,0.1033,0.1029,-0.1786,0.7838
+XLC,full-history,82,0.1755,0.231,-0.3967,0.6698
+XLE,full-history,183,0.1,0.0607,-0.5241,1.0954
+XLF,full-history,183,0.1367,0.1328,-0.1753,0.7181
+XLI,full-history,183,0.1426,0.1468,-0.1958,0.6944
+XLK,full-history,183,0.2029,0.2145,-0.2773,0.6681
+XLRE,full-history,114,0.0748,0.0486,-0.2625,0.461
+XLU,full-history,183,0.1137,0.1203,-0.1271,0.4159
+XLV,full-history,183,0.1327,0.1283,-0.1135,0.4141
+XLY,full-history,183,0.1602,0.1658,-0.3627,0.7272

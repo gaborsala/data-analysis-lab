@@ -1,0 +1,2 @@
+benchmark_column,non_null_count,median_value,review_note,suitability_flag
+NO_CANDIDATE_FOUND,0,,No benchmark candidate found automatically; manual threshold selection required.,low

@@ -1,0 +1,12 @@
+ticker,mode,annualized_volatility,max_drawdown,n_return_obs
+SPY,common-window,0.1646,-0.2393,94
+XLB,common-window,0.2047,-0.2618,94
+XLC,common-window,0.1901,-0.4346,93
+XLE,common-window,0.3236,-0.5821,94
+XLF,common-window,0.2059,-0.3179,94
+XLI,common-window,0.2043,-0.2715,94
+XLK,common-window,0.2087,-0.3121,94
+XLRE,common-window,0.1822,-0.3225,94
+XLU,common-window,0.16,-0.1887,94
+XLV,common-window,0.153,-0.1562,94
+XLY,common-window,0.2214,-0.3627,94

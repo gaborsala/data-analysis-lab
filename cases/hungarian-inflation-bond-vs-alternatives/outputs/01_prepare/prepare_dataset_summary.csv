@@ -1,0 +1,5 @@
+dataset_name,file_name,rows,cols,date_columns_detected,total_missing_values,duplicate_full_rows,meta_found
+etf_prices_daily,etf_prices_daily.csv,44814,3,Date,3580,0,True
+hungary_cpi_yoy,hungary_cpi_yoy.csv,184,2,date,0,0,True
+hungary_10y_yield,hungary_10y_yield.csv,325,2,date,0,0,True
+bond_reference_template,bond_reference_template.csv,1,5,,0,0,True

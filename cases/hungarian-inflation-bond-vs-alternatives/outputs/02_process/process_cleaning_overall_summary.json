@@ -1,0 +1,73 @@
+[
+  {
+    "dataset": "etf_prices_daily",
+    "before_rows": 44814,
+    "after_rows": 41234,
+    "rows_removed": 3580,
+    "before_missing_close": 3580,
+    "after_missing_close": 0,
+    "non_positive_close_count_after": 0,
+    "date_parse_issues": [
+      {
+        "column": "Date",
+        "raw_non_null": 44814,
+        "parsed_non_null": 44814,
+        "parse_failures": 0
+      }
+    ],
+    "tickers_with_internal_active_nulls": 0
+  },
+  {
+    "dataset": "hungary_cpi_yoy",
+    "before_rows": 184,
+    "after_rows": 184,
+    "duplicate_date_count": 0,
+    "missing_value_count_after": 0,
+    "date_parse_issues": [
+      {
+        "column": "date",
+        "raw_non_null": 184,
+        "parsed_non_null": 184,
+        "parse_failures": 0
+      }
+    ]
+  },
+  {
+    "dataset": "hungary_10y_yield",
+    "before_rows": 325,
+    "after_rows": 325,
+    "duplicate_date_count": 0,
+    "missing_value_count_after": 0,
+    "date_parse_issues": [
+      {
+        "column": "date",
+        "raw_non_null": 325,
+        "parsed_non_null": 325,
+        "parse_failures": 0
+      }
+    ]
+  },
+  {
+    "dataset": "bond_reference_template",
+    "before_rows": 1,
+    "after_rows": 1,
+    "premium_parse_success_count": 1,
+    "redemption_fee_parse_success_count": 1,
+    "premium_parse_failure_count": 0,
+    "redemption_fee_parse_failure_count": 0
+  },
+  {
+    "dataset": "etf_prices_month_end",
+    "row_count": 1975,
+    "ticker_count": 11,
+    "missing_close_month_end_count": 0,
+    "rule": "last valid ETF close within calendar month by ticker"
+  },
+  {
+    "dataset": "monthly_merged_context",
+    "row_count": 1975,
+    "missing_cpi_yoy_count": 121,
+    "missing_yield_10y_count": 11,
+    "join_rule": "ETF month-end series left joined to monthly CPI and 10Y yield on year_month"
+  }
+]

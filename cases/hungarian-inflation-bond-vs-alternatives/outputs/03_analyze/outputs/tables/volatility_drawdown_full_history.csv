@@ -1,0 +1,12 @@
+ticker,mode,annualized_volatility,max_drawdown,n_return_obs
+SPY,full-history,0.1425,-0.2393,194
+XLB,full-history,0.19,-0.2738,194
+XLC,full-history,0.1901,-0.4346,93
+XLE,full-history,0.266,-0.6397,194
+XLF,full-history,0.1859,-0.3179,194
+XLI,full-history,0.1773,-0.2715,194
+XLK,full-history,0.175,-0.3121,194
+XLRE,full-history,0.1697,-0.3225,125
+XLU,full-history,0.1413,-0.1887,194
+XLV,full-history,0.1362,-0.1562,194
+XLY,full-history,0.1837,-0.3627,194

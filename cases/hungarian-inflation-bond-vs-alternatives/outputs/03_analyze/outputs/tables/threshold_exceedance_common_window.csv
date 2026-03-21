@@ -1,0 +1,12 @@
+ticker,mode,threshold,windows_above_threshold,total_valid_windows,exceedance_rate
+SPY,common-window,0.05,64,83,0.7711
+XLB,common-window,0.05,46,83,0.5542
+XLC,common-window,0.05,61,82,0.7439
+XLE,common-window,0.05,49,83,0.5904
+XLF,common-window,0.05,49,83,0.5904
+XLI,common-window,0.05,58,83,0.6988
+XLK,common-window,0.05,69,83,0.8313
+XLRE,common-window,0.05,43,83,0.5181
+XLU,common-window,0.05,55,83,0.6627
+XLV,common-window,0.05,52,83,0.6265
+XLY,common-window,0.05,65,83,0.7831

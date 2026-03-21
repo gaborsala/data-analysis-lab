@@ -1,0 +1,12 @@
+ticker,first_valid_close_date,last_valid_close_date,null_close_count,pre_inception_null_count,post_coverage_null_count,internal_active_window_null_count,has_internal_active_nulls
+SPY,2010-01-04,2026-03-16,0,0,0,0,False
+XLB,2010-01-04,2026-03-16,0,0,0,0,False
+XLC,2018-06-19,2026-03-16,2129,2129,0,0,False
+XLE,2010-01-04,2026-03-16,0,0,0,0,False
+XLF,2010-01-04,2026-03-16,0,0,0,0,False
+XLI,2010-01-04,2026-03-16,0,0,0,0,False
+XLK,2010-01-04,2026-03-16,0,0,0,0,False
+XLRE,2015-10-08,2026-03-16,1451,1451,0,0,False
+XLU,2010-01-04,2026-03-16,0,0,0,0,False
+XLV,2010-01-04,2026-03-16,0,0,0,0,False
+XLY,2010-01-04,2026-03-16,0,0,0,0,False

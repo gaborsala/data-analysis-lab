@@ -1,0 +1,9 @@
+{
+  "dataset": "bond_reference_template",
+  "before_rows": 1,
+  "after_rows": 1,
+  "premium_parse_success_count": 1,
+  "redemption_fee_parse_success_count": 1,
+  "premium_parse_failure_count": 0,
+  "redemption_fee_parse_failure_count": 0
+}

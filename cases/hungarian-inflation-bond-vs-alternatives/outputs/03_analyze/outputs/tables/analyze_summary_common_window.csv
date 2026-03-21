@@ -1,0 +1,12 @@
+ticker,mode,valid_windows,mean_rolling_12m_return,median_rolling_12m_return,min_rolling_12m_return,max_rolling_12m_return,threshold,windows_above_threshold,total_valid_windows,exceedance_rate,annualized_volatility,max_drawdown,n_return_obs
+XLK,common-window,83,0.2412,0.264,-0.2773,0.6681,0.05,69,83,0.8313,0.2087,-0.3121,94
+XLY,common-window,83,0.1378,0.15,-0.3627,0.7272,0.05,65,83,0.7831,0.2214,-0.3627,94
+SPY,common-window,83,0.1584,0.1632,-0.1818,0.5623,0.05,64,83,0.7711,0.1646,-0.2393,94
+XLC,common-window,82,0.1755,0.231,-0.3967,0.6698,0.05,61,82,0.7439,0.1901,-0.4346,93
+XLI,common-window,83,0.1439,0.1534,-0.1958,0.6944,0.05,58,83,0.6988,0.2043,-0.2715,94
+XLU,common-window,83,0.1107,0.1248,-0.1271,0.4159,0.05,55,83,0.6627,0.16,-0.1887,94
+XLV,common-window,83,0.0947,0.0861,-0.1135,0.3389,0.05,52,83,0.6265,0.153,-0.1562,94
+XLF,common-window,83,0.1444,0.1148,-0.1753,0.7181,0.05,49,83,0.5904,0.2059,-0.3179,94
+XLE,common-window,83,0.1439,0.0915,-0.5241,1.0954,0.05,49,83,0.5904,0.3236,-0.5821,94
+XLB,common-window,83,0.1079,0.0967,-0.1695,0.7838,0.05,46,83,0.5542,0.2047,-0.2618,94
+XLRE,common-window,83,0.0802,0.0509,-0.2625,0.461,0.05,43,83,0.5181,0.1822,-0.3225,94

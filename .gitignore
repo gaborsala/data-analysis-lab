@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+data/raw/*
+!data/raw/README.md
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+tmp/
+temp/
+
+# Archives and exports
+*.zip
+*.7z
+*.rar
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Secrets / environment
+.env
+.env.*
+
+# Data policy
+# Keep folder structure, ignore raw payloads by default
+/data/raw/*
+!/data/raw/.gitkeep
+
+# Optional generated outputs at root
+/audit_output/
+
+# Keep case-study outputs tracked unless intentionally excluded

@@ -1,0 +1,18 @@
+{
+  "dataset": "etf_prices_daily",
+  "before_rows": 44814,
+  "after_rows": 41234,
+  "rows_removed": 3580,
+  "before_missing_close": 3580,
+  "after_missing_close": 0,
+  "non_positive_close_count_after": 0,
+  "date_parse_issues": [
+    {
+      "column": "Date",
+      "raw_non_null": 44814,
+      "parsed_non_null": 44814,
+      "parse_failures": 0
+    }
+  ],
+  "tickers_with_internal_active_nulls": 0
+}

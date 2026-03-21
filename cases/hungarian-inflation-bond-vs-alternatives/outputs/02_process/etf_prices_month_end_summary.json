@@ -1,0 +1,7 @@
+{
+  "dataset": "etf_prices_month_end",
+  "row_count": 1975,
+  "ticker_count": 11,
+  "missing_close_month_end_count": 0,
+  "rule": "last valid ETF close within calendar month by ticker"
+}

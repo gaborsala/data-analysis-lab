@@ -1,0 +1,3 @@
+column,observed_dtype,non_null_count,null_count,null_pct,n_unique,sample_min,sample_max
+date,datetime64[us],184,0,0.0,184,2010-01-01T00:00:00,2025-04-01T00:00:00
+cpi_yoy,float64,184,0,0.0,184,-1.442123,25.73415

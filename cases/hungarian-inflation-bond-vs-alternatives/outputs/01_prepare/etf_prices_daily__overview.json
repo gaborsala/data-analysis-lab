@@ -1,0 +1,59 @@
+{
+  "dataset_name": "etf_prices_daily",
+  "file_name": "etf_prices_daily.csv",
+  "file_profile": {
+    "file_name": "etf_prices_daily.csv",
+    "file_path": "data\\raw\\etf_prices_daily.csv",
+    "sha256": "ed9eeb3b64a84747c843643794bd3f4b2735da8aa37b5e63bfbc6887ca1b2a0b",
+    "row_count": 44814,
+    "column_count": 3,
+    "columns": [
+      "Date",
+      "ticker",
+      "close"
+    ],
+    "duplicate_full_rows": 0
+  },
+  "meta": {
+    "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\etf_prices_daily.csv",
+    "rows": 44814,
+    "columns": [
+      "Date",
+      "ticker",
+      "close"
+    ],
+    "sha256": "ed9eeb3b64a84747c843643794bd3f4b2735da8aa37b5e63bfbc6887ca1b2a0b"
+  },
+  "column_profile": [
+    {
+      "column": "Date",
+      "observed_dtype": "datetime64[us]",
+      "non_null_count": 44814,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 4074,
+      "sample_min": "2010-01-04T00:00:00",
+      "sample_max": "2026-03-16T00:00:00"
+    },
+    {
+      "column": "ticker",
+      "observed_dtype": "str",
+      "non_null_count": 44814,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 11,
+      "sample_min": "SPY",
+      "sample_max": "XLY"
+    },
+    {
+      "column": "close",
+      "observed_dtype": "float64",
+      "non_null_count": 41234,
+      "null_count": 3580,
+      "null_pct": 7.9886,
+      "n_unique": 38673,
+      "sample_min": 7.043539524078369,
+      "sample_max": 695.489990234375
+    }
+  ]
+}

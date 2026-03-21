@@ -1,0 +1,59 @@
+{
+  "topic": "spdr_sector_etfs",
+  "execution_time_utc": "2026-03-11T18:59:47.170259+00:00",
+  "script_path": "src/cases/spdr_sector_etfs/process/process_spdr_dataset.py",
+  "raw_file_path": "data\\raw\\all_sectors.csv",
+  "clean_file_path": "data\\processed\\all_sectors_clean.csv",
+  "raw_row_count": 61448,
+  "raw_column_count": 8,
+  "raw_missing_count": 0,
+  "cleaned_row_count": 61448,
+  "cleaned_column_count": 8,
+  "cleaned_missing_count": 0,
+  "rows_removed": 0,
+  "columns_removed": 0,
+  "duplicate_key_count": 0,
+  "price_nonpositive_count": 0,
+  "volume_negative_count": 0,
+  "ohlc_invalid_count": 0,
+  "date_parse_failures": 0,
+  "deterministic_pipeline": true,
+  "manual_steps": "None",
+  "transformations": [
+    {
+      "step": 1,
+      "change": "Convert date column from object to datetime",
+      "rationale": "Required for chronological and time-series operations",
+      "method": "pd.to_datetime(df['date'], errors='raise')",
+      "validation_result": "No parse failures"
+    },
+    {
+      "step": 2,
+      "change": "Convert open/high/low/close/volume to numeric",
+      "rationale": "Required for statistical and structural validation",
+      "method": "pd.to_numeric(..., errors='raise')",
+      "validation_result": "Successful conversion"
+    },
+    {
+      "step": 3,
+      "change": "Sort by ticker and date",
+      "rationale": "Ensures deterministic ordering for downstream analysis",
+      "method": "sort_values(['ticker', 'date'])",
+      "validation_result": "Ordering applied successfully"
+    }
+  ],
+  "remaining_issues": [
+    {
+      "issue": "Unequal ETF inception dates",
+      "impact": "Unequal historical coverage across sectors",
+      "risk_level": "Moderate",
+      "mitigation": "Use common-window robustness checks in ANALYZE"
+    },
+    {
+      "issue": "Non-trading days absent",
+      "impact": "Expected gaps in calendar dates",
+      "risk_level": "Low",
+      "mitigation": "Treat as normal market-data structure"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+key_columns,missing_key_columns,key_duplicate_count,null_in_key_count,unique_key_count,valid,dataset_name,file_name
+"['Date', 'ticker']",[],0,0,44814,True,etf_prices_daily,etf_prices_daily.csv
+['date'],[],0,0,184,True,hungary_cpi_yoy,hungary_cpi_yoy.csv
+['date'],[],0,0,325,True,hungary_10y_yield,hungary_10y_yield.csv
+['bond_id'],[],0,0,1,True,bond_reference_template,bond_reference_template.csv

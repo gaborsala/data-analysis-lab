@@ -1,0 +1,47 @@
+{
+  "dataset_name": "hungary_10y_yield",
+  "file_name": "hungary_10y_yield.csv",
+  "file_profile": {
+    "file_name": "hungary_10y_yield.csv",
+    "file_path": "data\\raw\\hungary_10y_yield.csv",
+    "sha256": "0176713cc0be1ea3884b71dc20a868db867e30dbe8888ed2963b60f5c7456c98",
+    "row_count": 325,
+    "column_count": 2,
+    "columns": [
+      "date",
+      "yield_10y"
+    ],
+    "duplicate_full_rows": 0
+  },
+  "meta": {
+    "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\hungary_10y_yield.csv",
+    "rows": 325,
+    "columns": [
+      "date",
+      "yield_10y"
+    ],
+    "sha256": "0176713cc0be1ea3884b71dc20a868db867e30dbe8888ed2963b60f5c7456c98"
+  },
+  "column_profile": [
+    {
+      "column": "date",
+      "observed_dtype": "datetime64[us]",
+      "non_null_count": 325,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 325,
+      "sample_min": "1999-02-01T00:00:00",
+      "sample_max": "2026-02-01T00:00:00"
+    },
+    {
+      "column": "yield_10y",
+      "observed_dtype": "float64",
+      "non_null_count": 325,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 249,
+      "sample_min": 1.83,
+      "sample_max": 11.65
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "dataset_name": "bond_reference_template",
+  "file_name": "bond_reference_template.csv",
+  "file_profile": {
+    "file_name": "bond_reference_template.csv",
+    "file_path": "data\\raw\\bond_reference_template.csv",
+    "sha256": "8d7a4ad2afb9f34ab4f87ea25382f7accb7163d2913f3d046c10cb98973d4145",
+    "row_count": 1,
+    "column_count": 5,
+    "columns": [
+      "bond_id",
+      "country",
+      "type",
+      "premium",
+      "redemption_fee"
+    ],
+    "duplicate_full_rows": 0
+  },
+  "meta": {
+    "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\bond_reference_template.csv",
+    "rows": 1,
+    "columns": [
+      "bond_id",
+      "country",
+      "type",
+      "premium",
+      "redemption_fee"
+    ],
+    "sha256": "8d7a4ad2afb9f34ab4f87ea25382f7accb7163d2913f3d046c10cb98973d4145"
+  },
+  "column_profile": [
+    {
+      "column": "bond_id",
+      "observed_dtype": "str",
+      "non_null_count": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 1,
+      "sample_min": "2033/I",
+      "sample_max": "2033/I"
+    },
+    {
+      "column": "country",
+      "observed_dtype": "str",
+      "non_null_count": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 1,
+      "sample_min": "Hungary",
+      "sample_max": "Hungary"
+    },
+    {
+      "column": "type",
+      "observed_dtype": "str",
+      "non_null_count": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 1,
+      "sample_min": "Inflation Linked",
+      "sample_max": "Inflation Linked"
+    },
+    {
+      "column": "premium",
+      "observed_dtype": "str",
+      "non_null_count": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 1,
+      "sample_min": "0.5%",
+      "sample_max": "0.5%"
+    },
+    {
+      "column": "redemption_fee",
+      "observed_dtype": "str",
+      "non_null_count": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 1,
+      "sample_min": "1%",
+      "sample_max": "1%"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "dataset_name": "hungary_cpi_yoy",
+  "file_name": "hungary_cpi_yoy.csv",
+  "file_profile": {
+    "file_name": "hungary_cpi_yoy.csv",
+    "file_path": "data\\raw\\hungary_cpi_yoy.csv",
+    "sha256": "518c0fbbc95d37be632f368f32433cfaba62ea2eab1d93078eedf9581f30925c",
+    "row_count": 184,
+    "column_count": 2,
+    "columns": [
+      "date",
+      "cpi_yoy"
+    ],
+    "duplicate_full_rows": 0
+  },
+  "meta": {
+    "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\hungary_cpi_yoy.csv",
+    "rows": 184,
+    "columns": [
+      "date",
+      "cpi_yoy"
+    ],
+    "sha256": "518c0fbbc95d37be632f368f32433cfaba62ea2eab1d93078eedf9581f30925c"
+  },
+  "column_profile": [
+    {
+      "column": "date",
+      "observed_dtype": "datetime64[us]",
+      "non_null_count": 184,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 184,
+      "sample_min": "2010-01-01T00:00:00",
+      "sample_max": "2025-04-01T00:00:00"
+    },
+    {
+      "column": "cpi_yoy",
+      "observed_dtype": "float64",
+      "non_null_count": 184,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "n_unique": 184,
+      "sample_min": -1.442123,
+      "sample_max": 25.73415
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "hungary_cpi_yoy",
+  "before_rows": 184,
+  "after_rows": 184,
+  "duplicate_date_count": 0,
+  "missing_value_count_after": 0,
+  "date_parse_issues": [
+    {
+      "column": "date",
+      "raw_non_null": 184,
+      "parsed_non_null": 184,
+      "parse_failures": 0
+    }
+  ]
+}
