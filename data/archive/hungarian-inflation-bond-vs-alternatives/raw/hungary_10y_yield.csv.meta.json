@@ -1,0 +1,9 @@
+{
+  "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\hungary_10y_yield.csv",
+  "rows": 325,
+  "columns": [
+    "date",
+    "yield_10y"
+  ],
+  "sha256": "0176713cc0be1ea3884b71dc20a868db867e30dbe8888ed2963b60f5c7456c98"
+}

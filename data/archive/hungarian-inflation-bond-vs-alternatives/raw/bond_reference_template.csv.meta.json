@@ -1,0 +1,12 @@
+{
+  "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\bond_reference_template.csv",
+  "rows": 1,
+  "columns": [
+    "bond_id",
+    "country",
+    "type",
+    "premium",
+    "redemption_fee"
+  ],
+  "sha256": "8d7a4ad2afb9f34ab4f87ea25382f7accb7163d2913f3d046c10cb98973d4145"
+}

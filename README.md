@@ -1,260 +1,241 @@
 # Data Analysis Lab
 
-A structured repository for end-to-end financial data analysis case studies.
+A **process-driven data analysis portfolio** demonstrating how raw datasets are transformed into structured, evidence-based insights.
 
-This project demonstrates how datasets move through a complete analytical lifecycle:
+This repository focuses on **analytical discipline, reproducibility, and decision-oriented thinking**.
+
+---
+
+## Core Framework
+
+All case studies follow a consistent lifecycle:
 
 **ASK → PREPARE → PROCESS → ANALYZE → ACT**
 
-Each case study documents the full reasoning process, data transformations, and outputs required to move from raw data to a decision-oriented conclusion.
-
-The goal is to demonstrate **deterministic, reproducible analytical workflows**, similar to those used in professional data analyst and financial research roles.
-
-For a detailed explanation of the framework:
-
-→ `docs/ANALYTICAL_METHOD.md`
+Each phase is explicitly documented to reflect real-world analytical workflows.
 
 ---
 
-# Repository Structure
+## What This Repository Demonstrates
 
-```
+- structured problem definition  
+- rigorous data validation  
+- controlled data transformation  
+- clear exploratory analysis  
+- disciplined interpretation (non-causal)  
+
+The goal is not to showcase tools, but to demonstrate **how analytical work is actually performed**.
+
+---
+
+## How to Read This Repository
+
+If you are reviewing this as a recruiter or collaborator:
+
+1. Open any case in `/cases/`
+2. Follow the lifecycle:
+   - `00_ask/` → problem definition  
+   - `01_prepare/` → dataset validation  
+   - `02_process/` → transformations  
+   - `03_analyze/` → structured findings  
+   - `04_act/` → interpretation and boundaries  
+3. Optionally review the notebook for execution details
+
+Each case is designed to be **traceable from question → conclusion**.
+
+---
+
+## Repository Structure
+
+
 data-analysis-lab/
 │
 ├─ cases/
-│  ├─ spdr-sector-etfs/
-│  │   ├─ 00_ask/
-│  │   ├─ 01_prepare/
-│  │   ├─ 02_process/
-│  │   ├─ 03_analyze/
-│  │   ├─ 04_act/
-│  │   └─ outputs/
-│  │
-│  └─ hungarian-inflation-bond-vs-alternatives/
-│      ├─ 00_ask/
-│      ├─ 01_prepare/
-│      ├─ 02_process/
-│      ├─ 03_analyze/
-│      ├─ 04_act/
-│      └─ outputs/
+│ ├─ spdr-sector-etfs/
+│ ├─ hungarian-inflation-bond-vs-alternatives/
+│ ├─ retail-sales-eda/
 │
 ├─ data/
-│  ├─ archive/
-│  ├─ interim/
-│  ├─ processed/
-│  ├─ raw/              # (not fully tracked – see reproducibility note)
-│  └─ README.md
+│ ├─ raw/
+│ ├─ processed/
+│ ├─ interim/
+│ └─ archive/
 │
 ├─ docs/
-│  ├─ templates/
-│  ├─ ANALYTICAL_METHOD.md
-│  └─ RUN_GUIDE.md
-│
-├─ learning/
-│  └─ cheatsheets/
+│ ├─ templates/
+│ ├─ ANALYTICAL_METHOD.md
+│ └─ RUN_GUIDE.md
 │
 ├─ src/
-│  ├─ adhoc/
-│  ├─ cases/
-│  └─ common/
+│ ├─ common/
+│ ├─ cases/
+│ └─ adhoc/
 │
-├─ README.md
+├─ learning/
+│ └─ cheatsheets/
+│
+├─ requirements.txt
 ├─ LICENSE
-└─ requirements.txt
-```
+└─ README.md
+
 
 ---
 
-# Analytical Lifecycle
+## Analytical Lifecycle
 
-Each case follows the same structured workflow.
+### 1. ASK — Problem Definition
 
-## 1. ASK
+- Define the analytical question  
+- Clarify decision context  
+- Establish scope and constraints  
 
-Define the analytical problem:
-
-* What question is being answered?
-* What decision depends on this analysis?
-* What dataset is required?
-
-Output: clearly defined analytical objective.
+Output: clearly defined objective  
 
 ---
 
-## 2. PREPARE
+### 2. PREPARE — Data Validation
 
-Validate dataset structure before transformation:
+- Schema validation  
+- Missingness checks  
+- Duplicate detection  
+- Data integrity verification  
 
-* schema checks
-* missing values
-* duplicates
-* date parsing
-* column validation
-
-Output: dataset ready for processing.
+Output: validated dataset ready for transformation  
 
 ---
 
-## 3. PROCESS
+### 3. PROCESS — Controlled Transformation
 
-Transform raw data into analysis-ready format:
+- Minimal, explicit data transformations  
+- Feature engineering where necessary  
+- Preservation of raw data  
 
-* cleaning inconsistencies
-* aligning time series
-* normalization
-* merging datasets
-
-All transformations are explicitly logged.
+Output: analysis-ready dataset  
 
 ---
 
-## 4. ANALYZE
+### 4. ANALYZE — Structured Exploration
 
-Perform structured analysis:
+- Aggregations and distributions  
+- Comparative analysis (categories, segments, time)  
+- Pattern identification  
 
-* return calculations
-* volatility analysis
-* correlation structure
-* benchmark comparison
-* structural pattern detection
-
-Outputs include:
-
-* tables
-* logs
-* charts
+Outputs:
+- tables  
+- charts  
+- structured findings  
 
 ---
 
-## 5. ACT
+### 5. ACT — Interpretation Layer
 
-Translate analysis into decision-level output:
-
-* structural observations
-* risk interpretation
-* benchmark comparison
-* limitations
-
-This phase connects data analysis to decision-making.
-
----
-
-# Case Studies
-
-## 1. SPDR Sector ETFs
-
-Analyzes relative performance of US sector ETFs.
-
-Includes:
-
-* sector dispersion analysis
-* volatility regimes
-* correlation with SPY
-* structural leadership classification
-
-This case demonstrates **cross-sectional market structure analysis**.
-
----
-
-## 2. Hungarian Inflation Bond vs Alternatives
-
-Evaluates inflation-linked bonds against alternative investments.
-
-Includes:
-
-* CPI integration
-* real return calculation
-* benchmark comparison logic
-* scenario-based analysis
-
-This case demonstrates **macro + investment decision modeling**.
-
----
-
-# Code Organization
-
-## src/common/
-
-Reusable components:
-
-* data validation
-* I/O utilities
-* shared transformations
-
----
-
-## src/cases/
-
-Case-specific pipeline logic.
-
-Example:
-
-```
-src/cases/hungarian-inflation-bond-vs-alternatives/
-```
-
-Contains:
-
-* prepare scripts
-* process pipelines
-* analysis runners
-* act-stage logic
-
----
-
-## src/adhoc/
-
-Temporary scripts used during development.
-
-Not part of the core pipeline.
-
----
-
-# Reproducibility
-
-This repository focuses on **structural reproducibility**, not raw data distribution.
+- Translate findings into structured implications  
+- Identify areas for further investigation  
+- Define analytical boundaries  
 
 Important:
+- No causal claims  
+- No forecasting  
+- No overinterpretation  
 
-* Some raw datasets are not included
-* Processed outputs and final artifacts are tracked
-* Each phase is documented in Markdown
-* Python pipelines mirror the documented lifecycle
+---
+
+## Case Studies
+
+### SPDR Sector ETFs
+
+- Relative performance analysis  
+- Market structure classification  
+- Sector leadership dynamics  
+
+Focus: **cross-sectional financial analysis**
+
+---
+
+### Hungarian Inflation Bond vs Alternatives
+
+- Real return comparison  
+- CPI integration  
+- Scenario-based evaluation  
+
+Focus: **macro + investment analysis**
+
+---
+
+### Retail Sales EDA
+
+- Revenue and profit distribution  
+- Loss concentration analysis  
+- Discount–profit association  
+
+Focus: **transaction-level exploratory analysis**
+
+---
+
+## Code Organization
+
+### `src/common/`
+Reusable utilities:
+- validation  
+- I/O  
+- shared transformations  
+
+---
+
+### `src/cases/`
+Case-specific pipelines:
+- prepare scripts  
+- process pipelines  
+- analysis logic  
+
+---
+
+### `src/adhoc/`
+Temporary development scripts  
+(not part of production workflow)
+
+---
+
+## Reproducibility
+
+This repository emphasizes **structural reproducibility**:
+
+- Analytical steps are documented in Markdown  
+- Code reflects each lifecycle phase  
+- Raw datasets may not be included  
+- Outputs can be regenerated from notebooks or scripts  
 
 ---
 
 ## Environment Setup
 
-Install dependencies:
 
-```
 pip install -r requirements.txt
-```
+
 
 ---
 
-## Example Run (Hungarian Case)
+## Example Run
 
-```
+
 python src/cases/hungarian-inflation-bond-vs-alternatives/process/run_process_full.py
 python src/cases/hungarian-inflation-bond-vs-alternatives/analyze/run_analyze_full.py
-```
+
 
 ---
 
-# Purpose
+## Purpose
 
-This repository demonstrates:
+This repository is designed to demonstrate:
 
-* structured analytical thinking
-* reproducible data pipelines
-* financial data analysis
-* decision-oriented reporting
+- disciplined analytical workflows  
+- reproducible data pipelines  
+- structured thinking under constraints  
 
-It is designed as a **portfolio project for data analyst / financial analyst roles**.
+It serves as a **portfolio for data analyst and financial analyst roles**.
 
 ---
 
-# License
+## License
 
-This project is licensed under the MIT License.
+MIT License

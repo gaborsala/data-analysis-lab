@@ -1,0 +1,9 @@
+{
+  "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\hungary_cpi_yoy.csv",
+  "rows": 184,
+  "columns": [
+    "date",
+    "cpi_yoy"
+  ],
+  "sha256": "518c0fbbc95d37be632f368f32433cfaba62ea2eab1d93078eedf9581f30925c"
+}

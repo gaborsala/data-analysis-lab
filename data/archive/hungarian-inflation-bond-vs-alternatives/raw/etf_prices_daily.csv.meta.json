@@ -1,0 +1,10 @@
+{
+  "file": "C:\\Users\\Lazarus\\Github\\data-analysis-lab\\cases\\hungarian-inflation-bond-vs-alternatives\\outputs\\02_process\\etf_prices_daily.csv",
+  "rows": 44814,
+  "columns": [
+    "Date",
+    "ticker",
+    "close"
+  ],
+  "sha256": "ed9eeb3b64a84747c843643794bd3f4b2735da8aa37b5e63bfbc6887ca1b2a0b"
+}
