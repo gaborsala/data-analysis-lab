@@ -1,0 +1,6 @@
+source_file,ticker,row_count,min_date,max_date,null_date,null_open,null_high,null_low,null_close,null_adj_close,null_volume,duplicate_date_ticker,schema_ok,notes
+brent_raw.csv,BZ=F,1259,2021-04-05,2026-04-02,0,0,0,0,0,0,0,0,Yes,
+natgas_raw.csv,NG=F,1259,2021-04-05,2026-04-02,0,0,0,0,0,0,0,0,Yes,
+spy_raw.csv,SPY,1256,2021-04-05,2026-04-02,0,0,0,0,0,0,0,0,Yes,
+wti_raw.csv,CL=F,1258,2021-04-05,2026-04-02,0,0,0,0,0,0,0,0,Yes,
+xle_raw.csv,XLE,1256,2021-04-05,2026-04-02,0,0,0,0,0,0,0,0,Yes,

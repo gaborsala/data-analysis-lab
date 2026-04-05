@@ -28,6 +28,29 @@ The goal is not to showcase tools, but to demonstrate **how analytical work is a
 
 ---
 
+## Interactive Dashboard (V1)
+
+The repository includes a Streamlit-based analytical dashboard:
+
+**Energy Market Dashboard — V1**
+
+- Built from aligned daily dataset  
+- Uses consistent `close` price basis  
+- Strictly descriptive (no forecasting)  
+- Reproducible from pipeline outputs  
+
+### Panels:
+- Normalized Performance  
+- Rolling Volatility (20-day annualized)  
+- Drawdown  
+- XLE / SPY Relative Strength  
+
+Example view:
+
+![Energy Market Dashboard](cases/energy-market-dashboard/docs/dashboard_screenshot.png)
+
+---
+
 ## How to Read This Repository
 
 If you are reviewing this as a recruiter or collaborator:
@@ -39,7 +62,7 @@ If you are reviewing this as a recruiter or collaborator:
    - `02_process/` → transformations  
    - `03_analyze/` → structured findings  
    - `04_act/` → interpretation and boundaries  
-3. Optionally review the notebook for execution details
+3. Optionally review the notebook or dashboard
 
 Each case is designed to be **traceable from question → conclusion**.
 
@@ -51,6 +74,7 @@ Each case is designed to be **traceable from question → conclusion**.
 data-analysis-lab/
 │
 ├─ cases/
+│ ├─ energy-market-dashboard/
 │ ├─ spdr-sector-etfs/
 │ ├─ hungarian-inflation-bond-vs-alternatives/
 │ ├─ retail-sales-eda/
@@ -142,6 +166,24 @@ Important:
 
 ## Case Studies
 
+### Energy Market Dashboard (NEW)
+
+- Multi-asset analysis: Brent, WTI, Natural Gas, XLE, SPY  
+- Aligned daily panel construction (common date window)  
+- Metric validation (`close` vs `adj_close`)  
+- Four-panel analytical system:
+
+  1. Normalized performance  
+  2. Rolling volatility  
+  3. Drawdown  
+  4. Relative strength (XLE / SPY)
+
+- Interactive Streamlit dashboard (V1)
+
+Focus: **cross-asset energy market structure (descriptive, non-causal)**
+
+---
+
 ### SPDR Sector ETFs
 
 - Relative performance analysis  
@@ -203,39 +245,32 @@ This repository emphasizes **structural reproducibility**:
 - Analytical steps are documented in Markdown  
 - Code reflects each lifecycle phase  
 - Raw datasets may not be included  
-- Outputs can be regenerated from notebooks or scripts  
+- Outputs can be regenerated from scripts or dashboards  
 
 ---
 
 ## Environment Setup
 
-
+```bash
 pip install -r requirements.txt
-
-
----
-
-## Example Run
-
-
+Example Run
 python src/cases/hungarian-inflation-bond-vs-alternatives/process/run_process_full.py
 python src/cases/hungarian-inflation-bond-vs-alternatives/analyze/run_analyze_full.py
 
+Run the dashboard:
 
----
-
-## Purpose
+streamlit run cases/energy-market-dashboard/app/app.py
+Purpose
 
 This repository is designed to demonstrate:
 
-- disciplined analytical workflows  
-- reproducible data pipelines  
-- structured thinking under constraints  
+disciplined analytical workflows
+reproducible data pipelines
+structured thinking under constraints
+translation of analysis into interactive dashboards
 
-It serves as a **portfolio for data analyst and financial analyst roles**.
+It serves as a portfolio for data analyst and financial analyst roles.
 
----
-
-## License
+License
 
 MIT License

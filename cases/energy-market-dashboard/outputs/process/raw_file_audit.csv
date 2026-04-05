@@ -1,0 +1,6 @@
+file_name,ticker,rows,cols,min_date,max_date,duplicate_date_ticker_rows,missing_values_total
+wti_raw.csv,CL=F,1258,8,2021-04-05,2026-04-02,0,0
+brent_raw.csv,BZ=F,1259,8,2021-04-05,2026-04-02,0,0
+natgas_raw.csv,NG=F,1259,8,2021-04-05,2026-04-02,0,0
+xle_raw.csv,XLE,1256,8,2021-04-05,2026-04-02,0,0
+spy_raw.csv,SPY,1256,8,2021-04-05,2026-04-02,0,0

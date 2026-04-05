@@ -1,0 +1,9 @@
+metric,value
+raw_row_count_total,6288
+aligned_row_count_total,6280
+raw_column_count,8
+aligned_column_count,8
+common_date_count,1256
+expected_ticker_count,5
+aligned_start_date,2021-04-05
+aligned_end_date,2026-04-02
