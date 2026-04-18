@@ -1,0 +1,1 @@
+python src/cases/market-structure-consistency/download_raw_data.py --start-date 2010-01-01

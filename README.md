@@ -14,6 +14,65 @@ All case studies follow a consistent lifecycle:
 
 Each phase is explicitly documented to reflect real-world analytical workflows.
 
+The goal is not to showcase tools, but to demonstrate **how analytical systems are designed and executed in a controlled, reproducible manner**.
+
+---
+
+## Repository Architecture (System Design)
+
+This repository is structured as a layered analytical system to ensure clarity, reproducibility, and disciplined execution.
+
+### Layers
+
+- **Framework (WHY)**  
+  `docs/framework/`  
+  High-level analytical methodology and lifecycle explanation  
+
+- **Governance (RULES)**  
+  `docs/governance/`  
+  Defines lifecycle constraints, naming conventions, and quality gates  
+
+- **Execution SOP (HOW — analytical)**  
+  `docs/sop/`  
+  Step-by-step procedures for executing each lifecycle phase  
+
+- **Technical Execution (HOW — environment)**  
+  `docs/setup/`  
+  Instructions for running pipelines and scripts  
+
+- **Templates (WHAT)**  
+  `docs/templates/`  
+  Standardized output formats for each lifecycle stage  
+
+---
+
+### Lifecycle Enforcement
+
+All work follows a strict sequence:
+
+**ASK → PREPARE → PROCESS → ANALYZE → ACT**
+
+Rules:
+- No stage skipping  
+- No mixing of stages  
+- No interpretation before validation  
+- No recommendation without evidence  
+
+---
+
+### Key Principle
+
+- Templates define **WHAT** to produce  
+- SOP defines **HOW** to produce it  
+- Governance defines **RULES**  
+- Framework explains **WHY**
+
+This separation ensures that analytical work is:
+
+- reproducible  
+- auditable  
+- structurally consistent  
+
 ---
 
 ## What This Repository Demonstrates
@@ -24,7 +83,21 @@ Each phase is explicitly documented to reflect real-world analytical workflows.
 - clear exploratory analysis  
 - disciplined interpretation (non-causal)  
 
-The goal is not to showcase tools, but to demonstrate **how analytical work is actually performed**.
+---
+
+## Getting Started
+
+For a structured walkthrough of the system:
+
+→ See: `docs/START_HERE.md`
+
+Typical workflow:
+
+1. Understand methodology → `docs/framework/`
+2. Review rules → `docs/governance/`
+3. Execute analysis → `docs/sop/`
+4. Use templates → `docs/templates/`
+5. Run code → `docs/setup/`
 
 ---
 
@@ -62,7 +135,7 @@ If you are reviewing this as a recruiter or collaborator:
    - `02_process/` → transformations  
    - `03_analyze/` → structured findings  
    - `04_act/` → interpretation and boundaries  
-3. Optionally review the notebook or dashboard
+3. Optionally review the notebook or dashboard  
 
 Each case is designed to be **traceable from question → conclusion**.
 
@@ -86,17 +159,16 @@ data-analysis-lab/
 │ └─ archive/
 │
 ├─ docs/
-│ ├─ templates/
-│ ├─ ANALYTICAL_METHOD.md
-│ └─ RUN_GUIDE.md
+│ ├─ framework/
+│ ├─ governance/
+│ ├─ sop/
+│ ├─ setup/
+│ └─ templates/
 │
 ├─ src/
 │ ├─ common/
 │ ├─ cases/
 │ └─ adhoc/
-│
-├─ learning/
-│ └─ cheatsheets/
 │
 ├─ requirements.txt
 ├─ LICENSE
@@ -108,43 +180,39 @@ data-analysis-lab/
 ## Analytical Lifecycle
 
 ### 1. ASK — Problem Definition
-
 - Define the analytical question  
 - Clarify decision context  
 - Establish scope and constraints  
 
-Output: clearly defined objective  
+**Output:** clearly defined objective  
 
 ---
 
 ### 2. PREPARE — Data Validation
-
 - Schema validation  
 - Missingness checks  
 - Duplicate detection  
 - Data integrity verification  
 
-Output: validated dataset ready for transformation  
+**Output:** validated dataset ready for transformation  
 
 ---
 
 ### 3. PROCESS — Controlled Transformation
-
 - Minimal, explicit data transformations  
 - Feature engineering where necessary  
 - Preservation of raw data  
 
-Output: analysis-ready dataset  
+**Output:** analysis-ready dataset  
 
 ---
 
 ### 4. ANALYZE — Structured Exploration
-
 - Aggregations and distributions  
 - Comparative analysis (categories, segments, time)  
 - Pattern identification  
 
-Outputs:
+**Outputs:**
 - tables  
 - charts  
 - structured findings  
@@ -152,12 +220,11 @@ Outputs:
 ---
 
 ### 5. ACT — Interpretation Layer
-
 - Translate findings into structured implications  
 - Identify areas for further investigation  
 - Define analytical boundaries  
 
-Important:
+**Important:**
 - No causal claims  
 - No forecasting  
 - No overinterpretation  
@@ -166,51 +233,40 @@ Important:
 
 ## Case Studies
 
-### Energy Market Dashboard (NEW)
-
+### Energy Market Dashboard
 - Multi-asset analysis: Brent, WTI, Natural Gas, XLE, SPY  
-- Aligned daily panel construction (common date window)  
+- Aligned daily panel construction  
 - Metric validation (`close` vs `adj_close`)  
-- Four-panel analytical system:
+- Interactive Streamlit dashboard  
 
-  1. Normalized performance  
-  2. Rolling volatility  
-  3. Drawdown  
-  4. Relative strength (XLE / SPY)
-
-- Interactive Streamlit dashboard (V1)
-
-Focus: **cross-asset energy market structure (descriptive, non-causal)**
+**Focus:** cross-asset energy market structure (descriptive, non-causal)
 
 ---
 
 ### SPDR Sector ETFs
-
 - Relative performance analysis  
 - Market structure classification  
 - Sector leadership dynamics  
 
-Focus: **cross-sectional financial analysis**
+**Focus:** cross-sectional financial analysis  
 
 ---
 
 ### Hungarian Inflation Bond vs Alternatives
-
 - Real return comparison  
 - CPI integration  
 - Scenario-based evaluation  
 
-Focus: **macro + investment analysis**
+**Focus:** macro + investment analysis  
 
 ---
 
 ### Retail Sales EDA
-
 - Revenue and profit distribution  
 - Loss concentration analysis  
 - Discount–profit association  
 
-Focus: **transaction-level exploratory analysis**
+**Focus:** transaction-level exploratory analysis  
 
 ---
 
@@ -242,10 +298,10 @@ Temporary development scripts
 
 This repository emphasizes **structural reproducibility**:
 
-- Analytical steps are documented in Markdown  
-- Code reflects each lifecycle phase  
-- Raw datasets may not be included  
-- Outputs can be regenerated from scripts or dashboards  
+- analytical steps are documented in Markdown  
+- code reflects each lifecycle phase  
+- raw datasets may not be included  
+- outputs can be regenerated from scripts or dashboards  
 
 ---
 
@@ -257,17 +313,17 @@ Example Run
 python src/cases/hungarian-inflation-bond-vs-alternatives/process/run_process_full.py
 python src/cases/hungarian-inflation-bond-vs-alternatives/analyze/run_analyze_full.py
 
-Run the dashboard:
+Run dashboard:
 
 streamlit run cases/energy-market-dashboard/app/app.py
 Purpose
 
-This repository is designed to demonstrate:
+This repository demonstrates:
 
 disciplined analytical workflows
 reproducible data pipelines
 structured thinking under constraints
-translation of analysis into interactive dashboards
+translation of analysis into decision-ready outputs
 
 It serves as a portfolio for data analyst and financial analyst roles.
 

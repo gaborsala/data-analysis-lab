@@ -1,0 +1,85 @@
+# PIPELINE — Raw Data Ingestion Spec
+Date: 2026-04-06
+Topic: Market Structure Historical Analysis (Consistency Layer)
+
+## Objective
+
+Create a deterministic raw-data download layer for the Market Structure Historical Analysis repo case.
+
+The pipeline must:
+
+- download adjusted daily OHLCV data for the canonical SPDR sector universe plus SPY
+- save one raw CSV per ticker
+- generate a dataset manifest for auditability
+- fail transparently when a ticker cannot be downloaded
+- avoid hidden filtering
+
+This pipeline is for raw data acquisition only.  
+No classification, ratio computation, resampling, or analytical interpretation is performed here.
+
+---
+
+## Proposed file layout
+
+```text
+cases/
+└── market-structure-consistency/
+    ├── data/
+    │   └── raw/
+    │       ├── XLB.csv
+    │       ├── XLE.csv
+    │       ├── ...
+    │       ├── SPY.csv
+    │       └── raw_download_manifest.csv
+    └── src/
+        └── data_acquisition/
+            ├── __init__.py
+            ├── config.py
+            └── download_raw_data.py
+Canonical universe
+XLB
+XLE
+XLF
+XLI
+XLK
+XLP
+XLU
+XLV
+XLY
+XLC
+XLRE
+SPY
+Assumptions
+Assumption	Why Assumed	Risk if Wrong	Detection Method
+yfinance returns usable adjusted historical data	Primary downloader is required	Some tickers may be incomplete or rate-limited	Manifest row counts and date coverage checks
+Daily OHLCV is sufficient raw input for later weekly structure construction	Later PROCESS stage can resample deterministically	If weekly source is required, downstream logic may differ	Confirm in PROCESS cadence validation
+Saving one CSV per ticker improves auditability	Easier spot-check and rerun	More files to manage	Confirm manifest completeness
+Local filesystem paths are stable inside the case directory	Deterministic output path required	Broken relative paths	CLI path validation
+Limitations
+No secondary fallback source is implemented in v1.
+No automatic retry/backoff is included beyond a single direct download call.
+ETF inception-date differences will create unequal history lengths.
+Corporate-action handling is delegated to the provider’s adjusted data.
+Internet/API instability can affect reproducibility across runs unless outputs are versioned immediately after download.
+Validation checks
+Performed by the script
+output directory exists or is created
+file written for each successful ticker
+required columns checked
+date column parsed
+row count recorded
+min/max date recorded
+duplicate dates counted
+status recorded in manifest
+Recommended after first run
+manually inspect 3 sample files
+confirm all 12 expected tickers are present
+verify SPY exists
+compare date coverage across all ETFs
+confirm no empty CSVs were saved
+Required dependency
+
+Add to requirements.txt if not already present:
+
+yfinance>=0.2.54
+pandas>=2.2.0
